@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0d0d11;
+  --foreground: #e4eaf8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d0d11;
+    --foreground: #e4eaf8;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+.keania_one {
+  font-family: var(--font-keania_one);
+}
+
+.livvic {
+  font-family: var(--font-livvic);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
